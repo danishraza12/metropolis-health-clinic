@@ -15,7 +15,7 @@ app.use(morgan('dev'));
 
 // Connecting to the database
 mongoose
-  .connect(process.env.CONNECTION_URI_OLD)
+  .connect(process.env.MONGODB_URI || process.env.CONNECTION_URI_OLD)
   .then(() => console.log('Database connected!'))
   .catch((err) => console.log(err));
 
