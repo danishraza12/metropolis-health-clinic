@@ -1,1 +1,1 @@
-worker: nodemon server.js
+worker: nodemon server.js || node server.js

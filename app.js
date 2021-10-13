@@ -13,9 +13,9 @@ dotenv.config({ path: './config.env' });
 app.use(express.json());
 app.use(morgan('dev'));
 
-// Connecting to the database
+// Connecting to the database by using connection link from heroku or local environment variable
 mongoose
-  .connect(process.env.MONGODB_URI || process.env.CONNECTION_URI_OLD)
+  .connect(process.env.MONGODB_URI || process.env.CONNECTION_MONGODB_URI_2_2VER)
   .then(() => console.log('Database connected!'))
   .catch((err) => console.log(err));
 

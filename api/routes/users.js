@@ -8,6 +8,7 @@ const User = require('../models/user');
 
 //////////////////   USER REGISTRATION MODULE   ///////////////////
 
+/////////   User Signup ////////
 router.post('/signup', (req, res) => {
   // Checking if mail already exists in the database
   User.find({ email: req.body.email })
@@ -29,7 +30,7 @@ router.post('/signup', (req, res) => {
               _id: new mongoose.Types.ObjectId(),
               email: req.body.email,
               password: hash,
-              userType: req.body.userType,
+              userType: req.body.userType.toLowerCase(),
             });
             user
               .save()
@@ -62,6 +63,7 @@ router.post('/signup', (req, res) => {
     });
 });
 
+/////////   Activate Account   /////////
 router.post('/activate', async (req, res) => {
   try {
     const userInfo = jwt.verify(req.body.token, process.env.JWT_SECRET);
@@ -112,6 +114,7 @@ router.post('/activate', async (req, res) => {
 
 ///////////////////   USER AUTHENTICATION MODULE   ////////////////////
 
+/////////   User Login   /////////
 router.post('/login', (req, res) => {
   User.find({ email: req.body.email })
     .exec()
@@ -165,6 +168,7 @@ router.post('/login', (req, res) => {
     });
 });
 
+/////////////   Delete User   //////////////
 router.delete('/:userId', (req, res) => {
   User.remove({ _id: req.params.userId })
     .exec()

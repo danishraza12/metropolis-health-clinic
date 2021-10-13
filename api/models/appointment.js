@@ -3,7 +3,7 @@ const User = require('./user');
 
 const appointmentSchema = mongoose.Schema({
   _id: mongoose.Schema.Types.ObjectId,
-  doctorId: { type: String },
+  doctorId: mongoose.Schema.Types.ObjectId,
   patientId: { type: String },
   time: { type: String, required: true },
   status: { type: String, default: 'pending', required: true },
