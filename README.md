@@ -1,5 +1,4 @@
-# Xord Summer Blockship Program #
-## MERN Stack Training ##
+# Xord Summer Blockship Program # (## MERN Stack Training ##)
 ## Metropolis Health Clinic Assignment ##
 ### API Documentation ###
 
