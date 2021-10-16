@@ -7,7 +7,7 @@ GitHub Repo Link: https://github.com/danishraza12/metropolis-health-clinic
  
 # 1.     User Registration Module #
 ## 1.1.         User Signup ##
-*API Endpoint:* https://metropolis-health-clinic.herokuapp.com/users/signup\
+*API Endpoint:* https://metropolis-health-clinic.herokuapp.com/users/signup \
 *API Method:* POST\
 *Request Sample:*\
 {
