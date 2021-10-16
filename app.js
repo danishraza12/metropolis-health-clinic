@@ -4,8 +4,11 @@ const app = express();
 //const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+
+// Adding routes
 const userRoutes = require('./api/routes/users');
 const appointmentRoutes = require('./api/routes/appointments');
+const treatmentRoutes = require('./api/routes/treatment');
 
 dotenv.config({ path: './config.env' });
 
@@ -22,6 +25,7 @@ mongoose
 // Forward requests to their respective route handlers
 app.use('/users', userRoutes);
 app.use('/appointments', appointmentRoutes);
+app.use('/treatment', treatmentRoutes);
 
 // Creating CORS headers to prevent CORS Error
 app.use((req, res, next) => {

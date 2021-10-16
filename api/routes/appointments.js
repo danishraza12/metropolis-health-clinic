@@ -24,6 +24,11 @@ function extractToken(req) {
 ///////////   Appointment Booking   ///////////
 router.post('/', (req, res) => {
   const token = extractToken(req);
+  if (token === null) {
+    return res.status(401).json({
+      message: 'JWT required',
+    });
+  }
   const userInfo = jwt.verify(token, process.env.JWT_SECRET);
   let patientId = '';
   // Extracting Patient ID from payload of the token
@@ -57,7 +62,6 @@ router.post('/', (req, res) => {
           .catch((err) => {
             console.log(err);
             res.status(500).json({
-              password: req.body.password,
               error: err,
             });
           });
