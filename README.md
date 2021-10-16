@@ -2,7 +2,7 @@
 ## Metropolis Health Clinic Assignment using NodeJS, ExpressJS, MongoDB ##
 ### API Endpoint Documentation ###
 
-Deployed API Endpoints Base URL: https://metropolis-health-clinic.herokuapp.com
+Deployed API Endpoints Base URL: https://metropolis-health-clinic.herokuapp.com \
 GitHub Repo Link: https://github.com/danishraza12/metropolis-health-clinic
  
 # 1.     User Registration Module #
