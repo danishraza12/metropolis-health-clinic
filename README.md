@@ -10,11 +10,13 @@ GitHub Repo Link: https://github.com/danishraza12/metropolis-health-clinic
 **API Endpoint:** https://metropolis-health-clinic.herokuapp.com/users/signup \
 **API Method:** POST\
 **Request Sample:**\
-```{
+```
+{
     "email": "myemail@gmail.com",
     "password": "testingpass12",
     "userType": "Patient"
-}```
+}
+```
 Request Info:
 “email” field should be in a valid email format
 “status” is set to “false” by default and cannot be set by the user
