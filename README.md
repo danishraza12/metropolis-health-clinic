@@ -1,6 +1,6 @@
 # Xord Summer Blockship Program(MERN Stack Training)
 ## Metropolis Health Clinic Assignment using NodeJS, ExpressJS, MongoDB ##
-This project was created as part of Xord's Summer Blockship Program and consists of endpoints created for Metropolis Health Clinic using Node JS, Express JS and MongoDB.\
+This project was created as part of Xord's Summer Blockship Program and consists of endpoints created for Metropolis Health Clinic using Node JS, Express JS and MongoDB.
 ### API Endpoint Documentation ###
 
 Deployed API Endpoints Base URL: https://metropolis-health-clinic.herokuapp.com \
